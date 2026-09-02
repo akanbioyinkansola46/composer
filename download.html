@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPOSER DOWNLOAD</title>
+</head>
+<body>
+    <nav>
+        <div>
+   <center>
+     <img src="./image/imgi_1_logo-composer-transparent2 (1).png" style="width: 30px;" alt="">
+<font size="5"><a href="">Home |</a></font>
+<font size="5"><a href="">Getting Started |</a></font>
+<font size="5"><a href="">Download |</a></font>
+<font size="5"><a href="">Documentation |</a></font>
+<font size="5"><a href="">Browse packages </a></font>
+   </center>
+</div>
+    </nav>
+    <h1>Download Composer</h1>
+    <h2>Windows Installer</h2>
+    <h4>The installer - which requires that you have PHP already installed - will download <button>Composer</button> for you and set up your PATH environment <br>
+        variable so you can simply call composer from any directory.</h4>
+<h4>Download and run Composer-Setup.exe - it will install the latest composer version whenever it is executed.</h4>
+<h2>Command-line installation</h2>
+<h4>To quickly install Composer in the current directory, run the following script in your terminal. To automate the installation, use the guide on <br>
+     installing Composer programmatically.</h4>
+     <fieldset>
+        <p>php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"</p>
+        php -r "if (hash_file('sha384', 'composer-setup.php') === 'c8b085408188070d5f52bcfe4ecfbee5f727afa458b2573b8eaaf77b3419b0bf2768dc67c86944da1544f06fa544fd47') { echo 'Installer verified'.PHP_EOL; } else { echo 'Installer corrupt'.PHP_EOL; unlink('composer-setup.php'); exit(1); }"</p>
+        <p>php composer-setup.php</p>
+        <p>php -r "unlink('composer-setup.php');"</p>
+     </fieldset>
+<h4>This installer script will simply check some <button>php.ini</button> settings, warn you if they are set incorrectly, and then download the latest <br>
+    <button>composer.phar</button> in the current directory. The 4 lines above will, in order:</h4>
+<ul>
+    <li>Download the installer to the current directory</li>
+    <li>Verify the installer SHA-384, which you can also cross-check here</li>
+    <li>Run the installer</li>
+    <li>Remove the installer</li>
+</ul>
+<h4>Most likely, you want to put the <button>composer.phar</button> into a directory on your PATH, so you can simply call <button> composer</button> from any directory <br>
+    (Global install), using for example:</h4>
+<div style="background-color: lightgray;">
+    <h4>sudo mv composer.phar /usr/local/bin/composer</h4>
+</div>
+<h4>For details, see the instructions on how to install Composer globally.</h4>
+<div style="background-color: bisque;">
+    <h4>WARNING: Please do not redistribute the install code. It will change with every version of the installer. Instead, please link to this <br>
+        page or check how to install Composer programmatically.</h4>
+</div>
+<h2>Notable Installer Options</h2>
+<h3>--install-dir</h3>
+<h4>You can install composer to a specific directory by using the <button> --install-dir</button> option and providing a target directory. Example:</h4>
+<button>php composer-setup.php --install-dir=bin</button>
+<h3>--filename</h3>
+<h4>You can specify the filename (default: composer.phar) using the --filename option. Example:</h4>
+<button>php composer-setup.php --filename=composer</button>
+<h3>--version</h3>
+<h4>You can install composer to a specific release by using the <button>--version</button> option and providing a target release. Example:</h4>
+<button>php composer-setup.php --version=1.0.0-alpha8</button>
+<h3>--preview, --snapshot, --1 (EOL), --2, --2.2 (LTS)</h3>
+
+
+
+</body>
+</html>
